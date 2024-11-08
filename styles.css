@@ -1,0 +1,217 @@
+/* Reset e normalização básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #121212;
+  }
+  
+  /* Cores principais e secundárias */
+  :root {
+    --primary-color: #007bff; /* Azul primário */
+    --secondary-color: #333;  /* Cinza escuro */
+    --background-color: #1b1b1b; /* Fundo escuro */
+    --highlight-color: #007bff; /* Cor para detalhes */
+    --button-color: #007bff;
+    --text-light: #fff;
+  }
+  
+  /* Estilos para o Banner */
+  .banner {
+    background-image: url('assets/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  .banner .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  
+  .banner button {
+    background-color: var(--button-color);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .banner button:hover {
+    background-color: darken(var(--button-color), 10%);
+  }
+  
+  /* Estilo para a seção "O que vou aprender" */
+  #course-content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--background-color);
+  }
+  
+  #course-content h2 {
+    font-size: 2.5rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+  }
+  
+  #course-content p {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+  
+  .modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .module {
+    background-color: #292929;
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .module:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Seção "Transforme o Mundo" */
+  #transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url(assets/images/woman-code.png);
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+    }
+
+    section {
+        margin: 100px auto;
+    }
+
+   
+    #transform-world p 
+    {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+    }
+    
+    p {
+       color: white;
+    }
+
+    * {
+       font-family: 'Raleway', sans-serif;
+       box-sizing: border-box;
+       margin: 0;
+      }
+
+    p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    }
+  
+  
+  /* Seção "Desafios Profissionais" */
+  #professional-challenges {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--background-color);
+  }
+  
+  #professional-challenges h2 {
+    font-size: 2.5rem;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+  }
+  
+  #professional-challenges img {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  footer .dio-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .modules-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .banner h1 {
+      font-size: 2.2rem;
+    }
+  
+    #professional-challenges img {
+      width: 100%;
+    }
+  }
+  
